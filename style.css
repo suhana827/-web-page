@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Dancing Script', cursive; /* Use cursive font for body text */
+    background-color: #fbe9e7; /* Light baby pink background */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* To include padding and border in the element's total width and height */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 3em;
+    color: #000080; /* Navy blue color for logo */
+    font-family: 'Dancing Script', cursive; /* Cursive font for the logo */
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align the nav links in a row */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between nav links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Default color for the nav links */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff4081; /* Hover color for nav links */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Product grid container */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    gap: 20px; /* Space between the images */
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.product:hover {
+    transform: translateY(-10px); /* Lift the product card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow effect on hover */
+}
+
+.product img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: 200px;   /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+    border-radius: 8px; /* Add rounded corners to the images */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* For scaling the image */
+}
+
+.product img.pop {
+    transform: scale(1.2); /* Pop effect: Image enlarges when clicked */
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+    font-weight: normal; /* Ensure the product name is not too bold */
+}
+
+.product .price {
+    font-size: 1.1em;
+    color: #ff4081;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.add-to-cart:hover {
+    background-color: #e01b63;
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+/* Footer Styles */
+footer {
+    backgroun
